@@ -1,4 +1,4 @@
-package org.ravi.helloworld;
+#package org.ravi.helloworld;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
@@ -23,7 +23,7 @@ public class HelloTest {
 		driver = new FirefoxDriver();*/
 		System.setProperty("webdriver.chrome.driver","resources\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://localhost:8082/StarApp/");
+		driver.get("http://localhost:8085/StarApp/");
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 	}
 
